@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>魔兽世界</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="icon" href="favicon.ico" type="image"/>
+    <style>
+        body, p, h1, h2, h3, h4, h5, h6, ol, ul, dl, li, dt, dd {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 14px;
+            font-family: "宋体";
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /*a:hover {*/
+            /*color: green;*/
+        /*}*/
+
+        input, img {
+
+            border: 0 none;
+            margin: 0;
+            padding: 0;
+            outline-style: none;
+        }
+
+        .clearfix:after {
+            content: "";
+            height: 0;
+            line-height: 0;
+            display: block;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .w{
+            width: 1349px;
+            margin: 0 auto;
+        }
+
+        #middle {
+            /*width: 1349px;*/
+            /*height: 2112px;*/
+            /*background-color: black;*/
+        }
+
+        .m-first {
+            height: 558px;
+            width: 1350px;
+            /*background-color: pink;*/
+        }
+
+        .m-first a {
+            display: block;
+            width: 669px;
+            height: 557px;
+            /*border: 1px solid #504137;*/
+            /*background-color: purple;*/
+        }
+
+        .m-left {
+            border: 1px solid #504137;
+            overflow: hidden;
+
+        }
+
+        .m-left:hover {
+            border: 1px solid #F8B700;
+        }
+
+        .m-right:hover {
+            border: 1px solid #F8B700;
+        }
+
+        .m-right{
+            border: 1px solid #504137;
+            overflow: hidden;
+            width: 666px;
+        }
+
+        .left-topimg {
+            position: absolute;
+            left: -160px;
+            top: 0;
+            border-bottom: 1px solid #504137;
+        }
+
+        .right-topimg {
+            position: absolute;
+            left: -160px;
+            top: 0;
+            border-bottom: 1px solid #504137;
+        }
+
+        .m-bottomleft {
+            border-top: 1px solid #504137;
+            width: 669px;
+            height: 183px;
+            background-color: #211510;
+        }
+
+        .w-word {
+            color: white;
+            font-family: Arial, Helvetica, 微软雅黑, "Microsoft YaHei", "Hei SC", sans-serif;
+            margin-top: 45px;
+            margin-left: 256px;
+        }
+
+        .y-word {
+            color: #F8B700;
+            font-size: 50px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, 微软雅黑, "Microsoft YaHei", "Hei SC", sans-serif;
+            margin-top: 23px;
+            margin-left: 210px;
+        }
+
+        .m-bottomright {
+            border-top: 1px solid #504137;
+            width: 669px;
+            height: 183px;
+            background-color: #211510;
+        }
+
+        .m-topleft {
+            width: 667px;
+            height: 375px;
+            overflow: hidden;
+            background-color: yellowgreen;
+            position: relative;
+        }
+
+        .m-topright {
+            width: 667px;
+            height: 375px;
+            overflow: hidden;
+            /*background-color: yellowgreen;*/
+            position: relative;
+        }
+
+body{
+    background-color: #000000;
+}
+        .m-second {
+            margin-top: 4px;
+            height: 503px;
+            border: 1px solid #141414;
+            background-image: url("images/伊利丹部分1.jpg");
+        }
+
+        #dva {
+            margin-left: 60px;
+            font-family: Arial, Helvetica, 微软雅黑, "Microsoft YaHei", "Hei SC", sans-serif;
+            font-size: 18px;
+        }
+        .second-dv {
+            width: 538px;
+            height: 390px;
+            /*background-color: gray;*/
+            margin-top: 80px;
+            margin-left: 672px;
+        }
+
+        .sec-th {
+            font-family: Arial, Helvetica, 微软雅黑, "Microsoft YaHei", "Hei SC", sans-serif;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 84px;
+            text-align: right;
+            color: #fff;
+        }
+
+        .second-dv .sec-content {
+            color: #fff;
+            font-weight: 600;
+            font-family: Arial, Helvetica, 微软雅黑, "Microsoft YaHei", "Hei SC", sans-serif;
+            font-size: 15px;
+            text-align: right;
+            margin-top: 44px;
+        }
+
+        .second-dv .sec-more {
+            margin-top: 44px;
+            height: 56px;
+            width: 176px;
+            border: 1px solid #C77E19;
+            line-height: 56px;
+            text-align: center;
+            color: #F7B10A;
+
+        }
+
+        .second-dv .sec-more div a{
+            font-size: 18px;
+            color: #F7B10A;
+            display: block;
+            font-family: Arial, Helvetica, 微软雅黑, "Microsoft YaHei", "Hei SC", sans-serif;
+        }
+
+        .second-dv .sec-more:hover {
+            background-color: #B06601;
+            color: #FED068;
+            cursor: pointer;
+        }
+
+        .second-dv .sec-content span {
+            font-style: italic;
+        }
+
+        .m-third {
+            margin-top: 4px;
+            height: 505px;
+            /*background-color:#161523;*/
+            padding-top: 30px;
+            background: url("images/边框啊.fw.png");
+        }
+        .third-1
+        {
+            overflow: hidden;
+            width: 1068px;
+            height: 231px;
+            margin-left: 127px;
+            margin-bottom: 23px;
+        }
+        /*.third-1 div{*/
+            /*margin-left: 2px;*/
+        /*}*/
+        .third-1 .third-11{
+            width: 500px;
+            overflow: hidden;
+            height: 231px;
+            text-align: center;
+            /*background-color: lightskyblue;*/
+            /*margin-left: 0;*/
+        }
+        .third-1 .third-12{
+            width: 251px;
+            height: 231px;
+            overflow: hidden;
+        }
+        .third-1 .third-13{
+            width: 251px;
+            height: 231px;
+            overflow: hidden;
+        }
+
+        .third-1 div{
+            margin-left: 22px;
+        }
+
+        .m-forth{
+            margin-top: 4px;
+            height: 503px;
+            border: 1px solid #141414;
+            background-image: url("images/未标题-1.jpg");
+            margin-bottom: 10px;
+        }
+        #video{
+            width: 1350px;
+            overflow: hidden;
+        }
+        #video1{
+            width: 1350px;
+            overflow: hidden;
+        }
+        .guanzhu{
+            position: relative;
+            height: 150px;
+        }
+        .guanzhu span{
+            display: block;
+            width: 420px;
+            height: 70px;
+            position: absolute;
+            top: 65px;
+            left: 465px;
+            background: url("images/game-icons-70.png");
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<audio src="亡灵序曲.mp3" autoplay loop></audio>
+<div class="body w">
+    <div id="video">
+    <video src="images/UREPJ0J3HFIP1476749568588.mp4" autoplay loop class="buy"></video></div>
+    <div class="header clearfix">
+        <div class="header-l fl">
+            <ul>
+                <li class="logo">
+                    <a href="#">魔兽世界</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#">游戏</a>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">商城</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-r fr">
+            <ul>
+                <li>
+                    <a href="#">支持</a>
+                </li>
+                <li>
+                    <div class="dropdown-r">
+                        <a href="#">您的通行证</a>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--顶部结束-->
+    <div class="nav">
+        <div class="nav-menu clearfix" id="nav-menu">
+            <div class="nav-menu-l fl" id="nav-menu-l">
+                <ul>
+                    <li>
+                        <a href="#">游戏
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">剧情故事
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">新闻</a>
+                    </li>
+                    <li>
+                        <a href="#">论坛</a>
+                    </li>
+                    <li>
+                        <a href="#">服务</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-menu-r fr">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">免费体验</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-logo" id="nav-logo">
+            <a href="#">
+                <img src="images/Logo-wow-cn-25ed322fb2.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="banner-content w  clearfix  cls"><!--重返卡拉赞正式上线部分开始-->
+        <div class="content-title1"><span>"重返卡拉赞"正式上线！</span></div>
+        <div class="content-title2"><span>邪恶的力量占据了麦迪文的古老塔楼，只有你才能阻止敌人揭露塔内深埋的秘密！</span></div>
+        <div class="content-inform"><!--了解多更，充值部分开始-->
+            <div class="content-inform-more"><a href="javascript:void(0)">了解更多</a></div>
+            <div class="content-inform-money"><a href="javascript:void(0)">立即充值</a></div>
+        </div>
+    </div>
+    <div class="main-content w clearfix  cls"><!--新闻以及更新部分内容开始-->
+        <div class="main-content-news clearfix">
+            <div class="main-content-news-inform">新闻及更新</div>
+            <div class="main-content-allnews"><a href="javascript:void(0)">查看所有新闻</a></div>
+            <div class="main-content-imgs  clearfix">
+                <div class="box" id="screen">
+                    <ul>
+                        <li><img src="图片轮播图/1.jpg" alt=""/></li>
+                        <li><img src="图片轮播图/2.jpg" alt=""/></li>
+                        <li><img src="图片轮播图/3.jpg" alt=""/></li>
+                        <li><img src="图片轮播图/4.jpg" alt=""/></li>
+                        <li><img src="图片轮播图/1.jpg" alt=""/></li>
+                        <li><img src="图片轮播图/2.jpg" alt=""/></li>
+                        <li><img src="图片轮播图/3.jpg" alt=""/></li>
+                        <li><img src="图片轮播图/4.jpg" alt=""/></li>
+                        <li><img src="图片轮播图/1.jpg" alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<div id="middle" class="w"><!--中间的部分-->
+    <div class="m-first clearfix">
+        <a href="轮播/index.html" class="fl">
+            <div class="m-left">
+                <div class="m-topleft"><!--新玩家入门  的图片-->
+                    <img src="images/PUVB3J5TH7FN1473401766451.jpg" alt="" height="375" class="left-topimg"/>
+                </div>
+                <div class="m-bottomleft"><!--棕色背景文字-->
+                    <div class="w-word">《魔兽世界》是什么？</div>
+                    <!--白色文字-->
+                    <div class="y-word">新玩家入门</div>
+                    <!--黄色文字-->
+                </div>
+
+            </div>
+        </a>
+        <a href="" class="fr">
+            <div class="m-right">
+                <div class="m-topright"><!--老玩家回归  的图片-->
+                    <img src="images/UG9T3UT3AMD51473401767197.jpg" alt="" height="375" class="right-topimg"/>
+                </div>
+                <div class="m-bottomright"><!--棕色背景文字-->
+                    <div class="w-word">艾泽拉斯需要你</div>
+                    <!--白色文字-->
+                    <div class="y-word">老玩家回归</div>
+                    <!--黄色文字-->
+                </div>
+
+            </div>
+        </a>
+
+
+    </div>
+    <div class="m-second"><!--座谈会部分-->
+        <div class="second-dv" id="dva">
+            <div class="sec-th">《军团再临》未来动向座谈会</div>
+            <div class="sec-content">在2016年暴雪嘉年华的 <span>《魔兽世界：军团再临》</span>未来动向访谈会上，游戏总监Ion Hazzikostas为我们带来了值得玩家期待的新消息。
+            </div>
+            <div class="sec-more fr ">
+                <div>了解更多</div>
+            </div>
+        </div>
+    </div>
+    <div class="m-third"><!--大量图片展示部分-->
+        <div class="third-1"><!--第一行-->
+            <div class="third-11 fl">
+                <a href="#"><img src="images/伊利丹3.jpg" alt=""/></a>
+            </div>
+            <div class="third-12 fl">
+                <a href=""><img src="images/脑残吼small.jpg" alt=""/></a>
+            </div>
+            <div class="third-13 fl">
+                <a href="#"><img src="images/希尔瓦娜斯small.jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="third-1"><!--第二行-->
+            <div class="third-13 fl">
+                <a href="#"><img src="images/瓦王small.jpg" alt=""/></a>
+            </div>
+            <div class="third-11 fl">
+                <a href="#"><img src="images/WYWsmall.jpg" alt=""/></a>
+            </div>
+            <div class="third-12 fl">
+                <a href=""><img src="images/死亡之翼small.jpg" alt=""/></a>
+            </div>
+        </div>
+    </div>
+    <div class="m-forth"><!--《军团再临》动画部分-->
+        <div class="second-dv">
+            <div class="sec-th">《军团再临》动画</div>
+            <div class="sec-content">燃烧军团已经开始大举进攻艾泽拉斯！立即观看震撼人心的开场动画！
+            </div>
+            <div class="sec-more fr ">
+                <div><a href="review.html">立即观看</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="yilidan clearfix w">
+    <div id="video1">
+    <video class="buy" src="images/YY3P4V0M97261473401753110.mp4" autoplay loop></video></div>
+    <div class="gift">
+        <p class="ziliao">资料片</p>
+        <p class="gift-bag">购买数字典藏礼包</p>
+        <p class="buy-gift">购买魔兽世界：军团再临数字典藏礼包，即可获得坐骑、宠物等史诗</p>
+        <p class="buy-gift-2">游戏奖励！加入破碎群岛的战役，阻止燃烧军团吧</p>
+        <input type="button" value="了解更多" id="btn1"/>
+        <input type="button" value="立即购买" id="btn2"/>
+    </div>
+
+</div>
+<!--中间的关注魔兽部分开始-->
+<div class="footer w">
+    <div class="guanzhu">
+        <p>关注暴雪</p>
+        <span></span>
+    </div>
+    <!--底部content-->
+    <div class="foot-content">
+        <!--底部支持反馈-->
+        <div class="support">
+            <ul>
+                <li><i class="sup-1"></i><a href="">支持</a></li>
+                <li><i class="sup-2"></i><a href="">反馈</a></li>
+                <li class="sup-fight"><i class="sup-3"></i><a href="">中国-简体中文</a><i class="sup-4"></i></li>
+            </ul>
+        </div>
+        <!--底部logo开始-->
+        <div class="foot-logo clearfix">
+            <div>
+                <img class="f-logo" src="images/Logo-foot.png" alt="" width="113" height="58"/>
+            </div>
+            <div class="about">
+                <ul class=" foot-ul">
+                    <li><a href="">查找职位</a></li><i></i>
+                    <li><a href="">关于</a></li><i></i>
+                    <li><a href="">隐私</a></li><i></i>
+                    <li><a href="">法律条款</a></li><i></i>
+                    <li><a href="">API</a></li>
+
+                </ul>
+                <p class="e-about">©2016 Blizzard Entertainment, Inc. All rights reserved.</p>
+            </div>
+            <div class="about-img">
+                <img  src="images/trust-e-logo.png" alt=""/>
+            </div>
+        </div>
+        <!--许可证编号信息介绍-->
+        <div class="number">
+            <p>沪网文[2014]0731-161号 | 增值电信业务经营许可证编号：沪B2－20080012<br />互联网违法和不良信息举报电话：0571-28090163 | 沪公网安备：31011502002167</p>
+        </div>
+        <!--底部警察小图片-->
+        <div class="foot-icon">
+            <img src="images/SiteFooter-icon-1.gif" alt=""/>
+            <img src="images/SiteFooter-icon-2.gif" alt=""/>
+            <img src="images/SiteFooter-icon-3.gif" alt=""/>
+            <img src="images/SiteFooter-icon-4.gif" alt=""/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="jquery-1.12.2.min.js"></script>
+<script>
+    $(function () {
+        $(".third-11").mouseover(function () {//这是图片进入后，尺寸变大的效果
+            $(this).children("a").children("img").stop().animate({"width":"550px","height":"260px"},1000);
+        }).mouseout(function () {
+            $(this).children("a").children("img").stop().animate({"width":"497px","height":"230px"},500);
+        });
+        $(".third-12").mouseover(function () {
+            $(this).children("a").children("img").stop().animate({"width":"280px","height":"270px"},1000);
+        }).mouseout(function () {
+            $(this).children("a").children("img").stop().animate({"width":"251px","height":"231px"},500);
+        });
+        $(".third-13").mouseover(function () {
+            $(this).children("a").children("img").stop().animate({"width":"280px","height":"270px"},1000);
+        }).mouseout(function () {
+            $(this).children("a").children("img").stop().animate({"width":"251px","height":"231px"},500);
+        })
+    });
+</script>
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            var top = $(this).scrollTop();
+            if (top > 40) {
+                $("#nav-menu a").addClass("scrollafter");
+                $("#nav-menu").addClass("nav-menu-scroll");
+                $(".nav").addClass("nav-scroll");
+                $("#nav-logo a img").css({
+                    "width": "70px",
+                    "height": "70px",
+                    "overflow": "hidden",
+                    "src": "images/game-icons-70.png"
+                });
+                $("#nav-logo").css({"top": "-8px", "left": "41px"});
+            } else {
+                $("#nav-menu a").removeClass();
+                $("#nav-menu").removeClass("nav-menu-scroll");
+                $(".nav").removeClass("nav-scroll");
+                $("#nav-logo a img").css({
+                    "width": "256px",
+                    "height": "103px",
+                    "src": "images/Logo-wow-cn-25ed322fb2.png"
+                });
+                $("#nav-logo").css({"top": "-10px", "left": "-110px"});
+            }
+        })
+        });
+</script>
+<script>
+    //先获取外部的div
+    function my$(id){
+        return document.getElementById(id);
+    }
+    var screen=my$("screen");
+    //根据div获取里面ul
+    var ul=screen.children[0];
+    var setId=null;
+    //为screen注册鼠标进入和鼠标离开的事件
+    screen.onmouseover=function () {
+        clearInterval(setId);
+    };
+    screen.onmouseout=function () {
+        setId=setInterval(f1,50);
+    };
+    setId=setInterval(f1,50);
+    function f1() {
+        var current=ul.offsetLeft;
+        var step=-3;
+        current+=step;
+        if(current<-1270){
+            ul.style.left=0+"px";
+        }else{
+            ul.style.left=current+"px";
+        }
+    }
+</script>

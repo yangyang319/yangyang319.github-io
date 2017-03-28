@@ -1,0 +1,272 @@
+﻿@charset "UTF-8";
+/*css 初始化 */
+/*标签初始化*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset,video legend, img {
+    margin: 0;
+    padding: 0;
+}
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+li,ul, ol {
+    list-style: none;
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/*合并边框*/
+table {
+    border-collapse: collapse;
+}
+body {
+    font-size: 17px;
+    font-family: 微软雅黑;
+    color: #666;
+    background: #000000;
+}
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+/*用来做图标*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1348px;
+    margin: 0 auto;
+}
+/*王丽 底部开始*/
+.yilidan{
+    position: relative;
+    margin-bottom: 4px;
+}
+.buy{
+    width:1365px;
+    /*height: 631px;*/
+    float: left;
+}
+.gift{
+    position: absolute;
+    margin-left: 134px;
+    float: left;
+    top: 30px;
+    color: #EBDEC2;
+}
+.gift .ziliao{
+    margin-bottom: 26px;
+}
+.gift .gift-bag{
+    font-size: 63px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 47px;
+}
+.gift .buy-gift{
+    margin-bottom: 13px;
+}
+/*了解更多按钮*/
+.gift #btn1:hover{
+background-color:#B06601;
+}
+.gift #btn1{
+    width: 176px;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #C77E19;
+    color: #F7B10A;
+    font-size: 18px;
+    margin-top: 45px;
+cursor:pointer;
+    font-family: 微软雅黑;
+}
+/*立即购买按钮*/
+.gift #btn2:hover{
+background-color:#B06601;
+}
+.gift #btn2{
+    width: 176px;
+    height: 56px;
+cursor:pointer;
+    background-color: rgba(253, 13, 1, 0.3);
+    border: 1px solid #EA3012;
+    font-size: 18px;
+    color: #F7B10A;
+    margin-top: 45px;
+    font-family: 微软雅黑;
+    margin-left: 8px;
+}
+/*中间的关注魔兽部分开始*/
+.footer{
+    height: 425px;
+    background-image: url("images/guanzhu-bar-bg.jpg");
+    margin-top: -4px;
+
+}
+.guanzhu{
+    margin-top: -4px;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    border: 1px solid #2F2A26;
+    background-color: rgba(0,0,0,0.1);
+    color: #EBDEC2;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*底部支持反馈开始*/
+.foot-content{
+    margin-left: 47px;
+margin-top:-30px;
+}
+.foot-content .support{
+    height: 19px;
+    margin-top: 65px;
+}
+.foot-content .support li{
+    float: left;
+    width: 60px;
+    height: 19px;
+    line-height: 19px;
+    margin-right: 20px;
+}
+.foot-content .support a{
+    font-size: 14px;
+    margin-left: 5px;
+    color: #B1997F;
+}
+.foot-content .support .sup-fight{
+    float: right;
+    width: 140px;
+    margin-right: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.foot-content .support .sup-1{
+    width: 19px;
+    height: 19px;
+    float: left;
+    background: url("images/Icon-footer-jingling.png") -3px -53px;
+}
+.foot-content .support .sup-2{
+    width: 19px;
+    height: 19px;
+    float: left;
+    background: url("images/Icon-footer-jingling.png") -3px -29px;
+}
+.foot-content .support .sup-3{
+    width: 19px;
+    height: 19px;
+    float: left;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: url("images/Icon-footer-jingling.png") -3px -78px;
+}
+.foot-content .support .sup-4{
+    width: 10px;
+    height: 8px;
+    float: right;
+    background: url("images/Icon-footer-jingling.png") -8px -9px;
+    position: absolute;
+    top: 8px;
+    right: -7px;
+}
+/*底部logo开始*/
+.foot-logo{
+    margin-top: 42px;
+}
+.foot-logo .f-logo{
+    float: left;
+}
+.foot-logo .about{
+    padding-top: 5px;
+    margin-left: 13px;
+    float: left;
+}
+.foot-logo .about-img{
+    float: right;
+    margin-right: 54px;
+}
+.foot-logo .about .foot-ul{
+    height: 22px;
+}
+.foot-logo .about li{
+    float: left;
+}
+.foot-logo .about a{
+    display: block;
+    padding: 0 8px;
+    color: #B1997F;
+    font-size: 14px;
+}
+.foot-logo .about i{
+    width: 1px;
+    height: 12px;
+    background-color: #B1997F;
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+.foot-content .e-about{
+    color: #B1997F;
+    font-size: 12px;
+    margin-top: 10px;
+}
+/*许可证编号信息介绍*/
+.foot-content .number{
+    margin-top: 21px;
+    color: #B1997F;
+    font-size: 12px;
+}
+/*底部警察小图片*/
+.foot-icon img{
+    margin-top: 14px;
+    margin-right: 10px;
+}
